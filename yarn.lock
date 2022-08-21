@@ -51,6 +51,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@nestjs/testing@^9.0.11":
+  version "9.0.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.0.11.tgz#8e60107a7aaf9fc7b2bf29d473c2bdb1887de017"
+  integrity sha512-tT+yj3av7ZJb9Cy09C4+FoUULvzUntf81g5eK5shRVeQ35RWqr7E5Uq77B7ePUF2Er/TictVZk43d7rKq1ClNA==
+  dependencies:
+    tslib "2.4.0"
+
 "@next/env@12.2.5":
   version "12.2.5"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.2.5.tgz#d908c57b35262b94db3e431e869b72ac3e1ad3e3"
@@ -1644,15 +1651,15 @@ tsconfig-paths@^3.14.1:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
+tslib@2.4.0, tslib@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
 tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
-  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tsutils@^3.21.0:
   version "3.21.0"
