@@ -2,8 +2,25 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import homeStyles from '../styles/Home.module.css'
+import { getSortedPostsData } from '../lib/post'
 
-const Home: NextPage = () => {
+
+export async function getStaticProps() { 
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+const Home = ({allPostsData}: {
+  allPostsData: {
+    id: string;
+    date: string;
+    title: string;
+  }[];
+}) => {
   return (
     <div>
       <Head>
@@ -17,7 +34,15 @@ const Home: NextPage = () => {
       <section className={`${homeStyles.headingMd} ${homeStyles.padding1px}`}>
         <h2 className={homeStyles.headingLg}>Blog</h2>
         <ul className={homeStyles.list}>
-
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={homeStyles.listItem} key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
         </ul>
       </section>
 
